@@ -1,7 +1,18 @@
+import HeroImage from "../../assets/images/food4.webp";
+
 export const About = () => {
     return (
       <>
-        <h1>About</h1>
+        <header className="reserve-table">
+          <img
+            className="header-reserve"
+            src={HeroImage}
+            alt="Little Lemon Ingredients"
+          ></img>
+          <div className="reserve-header-text">
+            <h1>About us</h1>
+          </div>
+        </header>
       </>
     );
   }

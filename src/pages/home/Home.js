@@ -1,12 +1,16 @@
-import { Header, Nav, Main, Footer } from '../../Components';
+import { Heading, Specials, Testimonials, About} from '../../sections';
 
 export const Home = () => {
     return (
       <>
-        <Header />
-        <Nav />
-        <Main />
-        <Footer />
+      <header>
+      <Heading />
+      </header>
+      <main>
+        <Specials />
+        <Testimonials />
+        <About />
+      </main>
       </>
     );
   }

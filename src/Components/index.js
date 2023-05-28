@@ -1,6 +1,6 @@
 export * from './Footer';
-export * from './Header';
-export * from './Logo';
-export * from './Main';
 export * from './Nav';
+export * from './Routing';
+export * from './Card';
+export * from './TestimonialCard';
 

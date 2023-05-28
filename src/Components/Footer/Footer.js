@@ -1,59 +1,78 @@
 import { Link } from 'react-router-dom';
-import { Logo } from '../Logo'
-import { SocialMediaWidget } from '../SocialMediaWidget';
-import './Footer.css';
 
 export const Footer = () => {
     return (
-      <>
-        <footer>
-          <section className="FooterLogo">
-            <Logo
-              className="LL-FooterLogo"
-              src="https://ik.imagekit.io/zenius/Coursera/html-css/Asset_14_4x_d1Yk7QBPiW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674426270880"
-               height="60px"
-            />
-          </section>
-          <section className="FooterMenu">
-            <nav className="nav">
-              <h3 class="nav-heading">Navigation</h3>
-                <ul>
-                  <li>
-                    <Link to="/" className="nav-item">Home</Link>
-                  </li>
-                  <li>
-                    <Link to="/about" className="nav-item">About</Link>
-                  </li>
-                  <li>
-                    <Link to="/menu" className="nav-item">Menu</Link>
-                  </li>
-                  <li>
-                    <Link to="/reservations" className="nav-item">Reservations</Link>
-                  </li>
-                  <li>
-                    <Link to="/order-online" className="nav-item">Order Online</Link>
-                  </li>
-                  <li>
-                    <Link to="/login" className="nav-item">Login</Link>
-                  </li>
-                </ul>
-            </nav>
-          </section>
-          <section className="FooterContacts">
-            <h3 class="contacts-heading">Contacts</h3>
-            <p>
-              2548 Matthews Street, Chicago, Illinois - 60631 <br />
-              815-582-5830 <br />
-              contact@littlelemon.com</p>
-          </section>
-          <section className="FooterSocials">
-            <h3 class="socials-heading">Social Media</h3>
-            <nav className="Navigation FooterNavigation">
-              <SocialMediaWidget />
-            </nav>
-          </section>
-        </footer>
-      </>
+      <footer>
+      <menu>
+        <li className="img-footer">
+          <img
+            src={require("../../assets/images/footer-logo.png")}
+            alt="Little Lemon logo"
+          ></img>
+        </li>
+        <li className="contact">
+          <h1 className="footer-header">Navigation</h1>
+          <ul className="footer-links">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <a
+              href={require("../../assets/images/menu.webp")}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Menu
+            </a>
+            <Link to="/reservations">Reservations</Link>
+            <Link to="/order">Order</Link>
+            <Link to="/login">Login</Link>
+          </ul>
+        </li>
+
+        <li>
+          <h1 className="footer-header">Contact</h1>
+          <ul className="footer-links">
+            <li>2395 Maldove Way,</li>
+            <li>Chicago Illinois</li>
+            <br></br>
+            <li>(629)-243-6827</li>
+            <br></br>
+            <a
+              href="mailto: info@littlelemon.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              info@littlelemon.com
+            </a>
+          </ul>
+        </li>
+        <li>
+          <h1 className="footer-header">Connect</h1>
+          <ul className="footer-links">
+            <a
+              href="https://www.facebook.com/thelittlelemonshop/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/littlelemonmoon/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=3Li-FfypZYE"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Join us!
+            </a>
+          </ul>
+        </li>
+      </menu>
+    </footer>
     );
   };
 
